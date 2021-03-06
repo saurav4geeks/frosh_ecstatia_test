@@ -1,0 +1,147 @@
+/* Formalities */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./Design/form-img.jpg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  /* height: 100vh;
+  width: 100vw; */
+}
+/* Event Form main container*/
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Form Box */
+
+.form-box {
+  width: 80%;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /*Copied Shadow*/
+  position: relative;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Overlay */
+.content-overlay {
+  background: #161515;
+  opacity: 70%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Logo */
+.logo-box {
+  margin: 2% 0;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 20vw;
+}
+/* Content Box */
+.content-box {
+  margin: 4%;
+}
+.header-content {
+  color: white;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  display: block;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10%;
+  padding-left: 30%;
+}
+form label {
+  display: block;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-size: 18px;
+}
+form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s all;
+  padding: 7px 0;
+  margin-bottom: 10px;
+  width: 350px;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+/* Turning of Arrow from number field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Completed removing arrow */
+form input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+form .primary-btn {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: #2e2c2f;
+  box-shadow: none;
+  border-radius: 5px;
+  display: block;
+  transition: 0.3s all;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  align-self: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  margin-left: -270px;
+}
+
+form .primary-btn:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+form .primary-btn:focus {
+  outline: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* for centering form groups */
+/* .name-group,
+.roll-group,
+.email-group,
+.q1-group {
+  margin: auto;
+} */

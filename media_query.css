@@ -1,0 +1,52 @@
+@media only screen and (max-device-width: 480px) {
+  body {
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+  }
+  /* .container {
+    height: 100vh;
+  } */
+  .logo-box {
+    margin-top: 5%;
+  }
+  .logo {
+    /* width: 20%; */
+  }
+  form {
+    padding-left: 10%;
+  }
+  .form-box {
+    width: 100%;
+    height: 90%;
+    margin: 30px auto;
+  }
+  /* .name-group,
+  .roll-group,
+  .email-group {
+    width: 90%;
+  } */
+  form input {
+    max-width: 90%;
+  }
+  form .primary-btn {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  body {
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+  }
+  form {
+    padding: 20%;
+  }
+  form .primary-btn {
+    margin-left: 0px;
+  }
+  .logo {
+    width: 300px;
+  }
+}
